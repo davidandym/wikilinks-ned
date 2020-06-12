@@ -4,11 +4,8 @@
 NED system for the paper [Effective Use of Context in Noisy Entity Linking](https://www.aclweb.org/anthology/D18-1126),
 build for the [Wikilinks-NED dataset](https://www.aclweb.org/anthology/K17-1008).
 
-### Requirements
-
-Packages used are details in ``requirements.txt``.
-
 Unfortunately, this code is really old and requires ``Python 2.7.17`` or similar, which I'm terribly sorry about :(
+
 
 ### Data
 
@@ -75,6 +72,9 @@ Running the system then looks like:
 ```
 python src/main.py --config_file $CONFIG --experiment_dir $OUTPUT_DIRECTORY
 ```
+
+As a small disclaimer, a lot of this code was written as an undergrad and was my first experience with deep learning libraries in general.
+A lot of my techniques for data loading, batching, etc. are very sub-optimal, and some hyper-parameters are hard-coded to match the original system described in [Named Entity Disambiguation for Noisy Text](https://www.aclweb.org/anthology/K17-1008).
 
 ### Paper
 
