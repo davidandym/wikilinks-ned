@@ -1,0 +1,21 @@
+{
+    "files": {
+		"base-data-dir": "/exp/dmueller/wikilinks/data/",
+		"wikilink-stats": "wikilinksNED-train-stats",
+		"word-embeds": "dim300vecs-relativized",
+        "ent-embeds": "dim300context-vecs-relativized",
+        "wiki-page-titles": "page_title.json"
+    },
+    "training": {
+        "neg_samples": 4,
+        "neg_sample_from_cands": false,
+        "batch_size": 100,
+        "epochs": 5
+    },
+    "model": {
+        "features": false,
+        "character_cnn": true,
+        "ccnn_window_size": 5,
+        "lr": 0.001
+    }
+}
